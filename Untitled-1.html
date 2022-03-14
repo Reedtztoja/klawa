@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function alfabet(charA, charZ) {
+            var abc = [], x = charA.charCodeAt(0), y = charZ.charCodeAt(0);
+            for (; x <= y; ++x) {
+                abc.push(String.fromCharCode(x));
+            }
+            return abc;
+        }
+        let a = alfabet('A', 'Z');
+
+        for (let i = 0; i < a.length; i++){
+        let b = document.createElement('button');
+        b.innerHTML = a[i];
+        b.addEventListener('click', tekst())
+        document.body.appendChild(b)
+        }
+        function tekst(){}
+        
+    </script>
+</body>
+
+</html>
